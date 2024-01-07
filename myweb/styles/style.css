@@ -1,0 +1,39 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+
+	color: #333;
+}
+
+p {
+	text-indent: 20px;
+}
+
+.title {
+	font-family: Tahoma, sans-serif;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: -2px;
+	text-decoration: line-through;
+	text-transform: uppercase;
+}
+
+.justify {
+	text-align: justify;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+
+	font-family: Tahoma, sans-serif;
+	color: gray;
+}
+
+ol {
+	list-style-type: decimal-leading-zero;
+}
