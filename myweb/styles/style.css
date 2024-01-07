@@ -3,8 +3,8 @@ body {
 	font-size: 16px;
 	line-height: 1.6;
 	color: #333;
-	background-color: #eee;
-	background-image: url('../img/pattern.png');
+
+	background: #eee url('../img/pattern.png');
 	background-size: 200px 200px;
 }
 
@@ -79,16 +79,20 @@ ol {
 	width: 700px;
 	height: 400px;
 	padding: 15px 25px;
-	margin-left: auto;
-	margin-right: auto;
+	/* margin-left: auto;
+	margin-right: auto; */
+	margin: 0 auto 20px;
 
 	border: 1px solid #ddd;
+
 	background-color: #fff;
-	background-image: url('../img/bg.jpg');
+	/* background-image: url('../img/bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* background-size: 200px 200px; */
-	background-position: center;
+	background-size: 200px 200px;
+	background-position: center; */
+	background: url('../img/bg.jpg') no-repeat center;
+	background-size: cover;
 }
 
 .post-title {
@@ -99,4 +103,14 @@ ol {
 .post-text p {
 	margin: 0 0 10px 0;
 	color: #fff;
+}
+
+/* Gradient */
+.gradient {
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+
+	/* background-image: linear-gradient(to right, #fff 40%, #333 80%, #fff); */
+	background-image: radial-gradient(circle, #fff, #333);
 }
