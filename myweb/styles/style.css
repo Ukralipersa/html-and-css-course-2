@@ -138,6 +138,12 @@ ol {
 	font-size: 15px;
 }
 
+.form-input:focus {
+	outline: none;
+
+	background-color: #7a7cf1;
+}
+
 .form-textarea {
 	width: 200px;
 	height: 150px;
@@ -147,4 +153,49 @@ ol {
 
 	font-family: Arial, sans-serif;
 	font-size: 15px;
+}
+
+.form-textarea:focus {
+	outline: none;
+
+	background-color: #7a7cf1;
+}
+
+.link {
+	color: #1d76dd;
+	text-decoration: none;
+}
+
+.link:visited {
+	color: #a315b0;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.btn {
+	padding: 5px 10px;
+	background-color: green;
+	border: 1px solid #3a9112;
+	color: #fff;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #3a9112;
+	cursor: pointer;
+}
+
+.btn:active {
+	background-color: #c8720f;
+}
+
+.btn:disabled {
+	background-color: gray;
+	cursor: not-allowed;
 }
