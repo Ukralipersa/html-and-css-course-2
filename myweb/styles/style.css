@@ -15,6 +15,10 @@ body {
 	letter-spacing: -2px;
 	/* text-decoration: line-through; */
 	text-transform: uppercase;
+	/* text-decoration: dotted underline red; */
+	text-decoration-style: dashed;
+	text-decoration-line: overline;
+	text-decoration-color: blue;
 }
 
 .justify {
@@ -150,9 +154,10 @@ ol {
 	padding: 5px;
 
 	border: 1px solid #000;
+	outline: 3px solid red;
+	outline-offset: 5px;
 
-	font-family: Arial, sans-serif;
-	font-size: 15px;
+	font: bold italic 15px Arial, sans-serif;
 }
 
 .form-textarea:focus {
@@ -198,4 +203,20 @@ ol {
 .btn:disabled {
 	background-color: gray;
 	cursor: not-allowed;
+}
+
+.form-fieldset {
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+
+	/* border-width: 1px;
+	border-style: solid;
+	border-color: #ccc; */
+
+	border-top: 0;
+}
+
+.form-title {
+	margin: 0 0 15px;
 }
