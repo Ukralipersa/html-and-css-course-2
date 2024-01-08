@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Форма</title>
+	</head>
+	<body>
+		<form class="form" action="/">
+			<h1 class="form__title">Личные данные</h1>
+
+			<div class="form-wrapper">
+				<label class="form__label" for="male">Муж</label>
+				<input class="form__input form__choose" type="radio" id="male" name="sex" />
+				<label class="form__label" for="female">Жен</label>
+				<input class="form__input form__choose" type="radio" id="female" name="sex" />
+			</div>
+
+			<input class="form__input" type="text" name="name" placeholder="Ваше имя" />
+			<input class="form__input" type="email" name="email" placeholder="Ваш e-mail" />
+			<input class="form__input" type="tel" name="phone" placeholder="Ваш номер телефона" />
+			<input class="form__input" type="text" name="address" placeholder="Адрес проживания" />
+			<textarea class="form__input form__textarea" name="about" placeholder="Информация о вас" rows="4"></textarea>
+
+			<h1 class="form__title">Безопасность</h1>
+
+			<input class="form__input" type="password" name="old_password" placeholder="Старый пароль" />
+			<input class="form__input" type="password" name="new_password" placeholder="Новый пароль" />
+			<input class="form__input" type="password" name="new_password_yet" placeholder="Новый пароль еще раз" />
+			<select class="form__input form__inpit_select-width" name="question" placeholder="Секретный вопрос">
+				<option value="">Секретный вопрос</option>
+				<option value="">Любимый цвет</option>
+			</select>
+			<input class="form__input" type="text" name="answer" placeholder="Ответ на сектретный вопрос" />
+
+			<h1 class="form__title">Оповещения</h1>
+			<div class="notif__wrapper">
+				<div class="form__notification">
+					<input type="checkbox" name="news" id="news" /> <label class="form__label" for="news">Получать новости на e-mail</label>
+				</div>
+				<div class="form__notification">
+					<input type="checkbox" name="discont" id="discont" /> <label class="form__label" for="discont">Получать информацию о скидках</label>
+				</div>
+			</div>
+			<div class="btn__wrapper">
+				<button class="btn btn__submit" type="submit">Сохранить</button>
+				<button class="btn btn__reset" type="reset">Отменить и очистить</button>
+			</div>
+		</form>
+	</body>
+</html>
