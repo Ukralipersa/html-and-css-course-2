@@ -114,3 +114,37 @@ ol {
 	/* background-image: linear-gradient(to right, #fff 40%, #333 80%, #fff); */
 	background-image: radial-gradient(circle, #fff, #333);
 }
+
+/* Form */
+
+.form {
+	width: 500px;
+	padding: 20px;
+	margin: auto;
+	background-color: #fff;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-input {
+	display: block;
+	padding: 5px;
+
+	border: 1px solid #000;
+
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+}
+
+.form-textarea {
+	width: 200px;
+	height: 150px;
+	padding: 5px;
+
+	border: 1px solid #000;
+
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+}
