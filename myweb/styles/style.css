@@ -270,3 +270,45 @@ ol {
 	top: 50%;
 	left: 50%;
 }
+
+/* Pseudo */
+
+.pseudo-title {
+	margin: 0;
+	position: relative;
+	font-size: 30px;
+	text-align: center;
+}
+
+.pseudo-title::before {
+	content: '';
+	display: block;
+	margin: 5px auto;
+	width: 70px;
+	height: 3px;
+
+	background-color: red;
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -35px;
+}
+
+.pseudo-title::after {
+	content: '';
+	display: block;
+	margin: 5px auto;
+	width: 70px;
+	height: 3px;
+
+	background-color: blue;
+}
+
+.pseudo-text p::first-letter {
+	font-size: 20px;
+}
+
+.pseudo-text p::first-line {
+	color: red;
+}
