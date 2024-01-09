@@ -1,3 +1,9 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -150,8 +156,10 @@ ol {
 }
 
 .form-textarea {
-	width: 200px;
-	height: 150px;
+	width: 2150px;
+	min-height: 150px;
+	max-height: 250px;
+	/* height: 150px; */
 	padding: 5px;
 
 	border: 1px solid #000;
@@ -159,6 +167,8 @@ ol {
 	outline-offset: 5px;
 
 	font: bold italic 15px Arial, sans-serif;
+
+	resize: vertical;
 }
 
 .form-textarea:focus {
@@ -185,6 +195,8 @@ ol {
 	background-color: green;
 	border: 1px solid #3a9112;
 	color: #fff;
+
+	transition: background 0.4s linear, border-color 0.4s linear;
 }
 
 .btn:focus {
@@ -195,6 +207,7 @@ ol {
 .btn:focus {
 	background-color: #3a9112;
 	cursor: pointer;
+	border-color: red;
 }
 
 .btn:active {
@@ -311,4 +324,25 @@ ol {
 
 .pseudo-text p::first-line {
 	color: red;
+}
+
+/* CSS3 */
+.element {
+	width: 400px;
+	height: 400px;
+	margin: 20px auto;
+	padding: 20px;
+
+	box-sizing: border-box;
+
+	background-color: #ccc;
+	border-radius: 20px;
+	box-shadow: 15px 35px 20px green inset, 15px 35px 20px black;
+	opacity: 0.3;
+}
+
+.element-title {
+	margin: 0;
+
+	text-shadow: 3px 3px 5px blue, 5px 5px 7px red;
 }
