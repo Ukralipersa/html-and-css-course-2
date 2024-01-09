@@ -3,15 +3,36 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="./styles/style.css" />
-		<title>Псевдоэлементыt</title>
+		<title>Псевдоэлементы</title>
 	</head>
 	<body>
-		<h1 class="pseudo-title">Псевдоэлементы</h1>
-		<div class="pseudo-text">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus delectus dignissimos facere fuga corrupti. Dolores minima hic sint ipsam tempore
-				fugit quisquam laborum sunt, modi tempora reiciendis aspernatur consequatur asperiores voluptatum! Perspiciatis accusamus alias porro.
-			</p>
-		</div>
+		<header class="header"><h1 class="pseudo-title">Псевдоэлементы</h1></header>
+		<nav><a href="#">Главная</a> <a href="#">Новости</a> <a href="#">Об авторе</a></nav>
+		<main class="content">
+			<article class="pseudo-text">
+				<h3>Заголовок</h3>
+				<time datetime="09-11-2024 19:00">Вчера</time>
+				<figure>
+					<img src="./img/summer.jpeg" alt="" width="300" />
+					<figcaption>Как я провел лето</figcaption>
+				</figure>
+				<p>
+					Lorem <mark>ipsum dolor</mark> sit amet consectetur adipisicing elit. Accusamus delectus dignissimos facere fuga corrupti. Dolores minima hic sint
+					ipsam tempore fugit quisquam laborum sunt, modi tempora reiciendis aspernatur consequatur asperiores voluptatum! Perspiciatis accusamus alias porro.
+				</p>
+			</article>
+			<article class="pseudo-text">
+				<h3>Заголовок</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus delectus dignissimos facere fuga corrupti. Dolores minima hic sint ipsam tempore
+					fugit quisquam laborum sunt, modi tempora reiciendis aspernatur consequatur asperiores voluptatum! Perspiciatis accusamus alias porro.
+				</p>
+			</article>
+		</main>
+		<aside class="sidebar">Боковая панель</aside>
+		<footer class="footer">
+			copyright
+			<address><p>Адрес</p></address>
+		</footer>
 	</body>
 </html>
